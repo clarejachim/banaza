@@ -1,10 +1,17 @@
+*{
+    margin: 0;
+}
+
+
+
 /** grid for all pages **/
 .grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr); /* spans to 11*/
     grid-template-rows: repeat(40, 1fr); /* supa long page */
   }
-  
+
+  /* fonts */
   h1{
     font-family: Neue Kabel;
     font-size: 96px;
@@ -13,9 +20,101 @@
   h2{
     font-family: "bagatelle-variable", sans-serif;
     font-variation-settings: "BLLS" 399.6006, "STCK" 219.81982; 
+    font-size: 80px;
+ 
   }
 
-  .ticket_button{
-    border: 20px solid 9ABE59; 
+
+
+  /* backgrounds */
+  #tickets-grad-bg{
+    
+    background-image: linear-gradient(#F6EEBB, #FFE573);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+ 
+
   }
 
+/* TICKET BUTTON */
+.button-tickets {
+  padding: 15px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  background-image: linear-gradient(45deg, #a8cd63 0%, #9dcd42  40%, #9ABE59  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-tickets:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-tickets:active {
+  transform: scale(0.95);
+}
+
+
+
+/* CSS */
+.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-tickets:hover,
+.button-tickets:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  
+}
+
+.button-6:hover {
+  transform: translateY(-2px);
+}
+
+.button-tickets:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+  
