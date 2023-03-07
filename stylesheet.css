@@ -16,6 +16,9 @@
   }
 
   .ticket_button{
-    border: 20px solid 9ABE59; 
+    border: 20px solid red; 
+    height: 70px;
+    padding: 50px;
+    color: brown;
   }
 
