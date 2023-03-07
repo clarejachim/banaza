@@ -1,0 +1,21 @@
+/** grid for all pages **/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* spans to 11*/
+    grid-template-rows: repeat(40, 1fr); /* supa long page */
+  }
+  
+  h1{
+    font-family: Neue Kabel;
+    font-size: 96px;
+  }
+
+  h2{
+    font-family: "bagatelle-variable", sans-serif;
+    font-variation-settings: "BLLS" 399.6006, "STCK" 219.81982; 
+  }
+
+  .ticket_button{
+    border: 20px solid 9ABE59; 
+  }
+
