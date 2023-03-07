@@ -19,7 +19,7 @@
 
   h2{
     font-family: "bagatelle-variable", sans-serif;
-    font-variation-settings: "BLLS" 399.6006, "STCK" 219.81982; 
+    font-variation-settings: "BLLS" 399.0, "STCK" 219.81982; 
     font-size: 80px;
  
   }
@@ -37,10 +37,9 @@
 
   }
 
-/* TICKET BUTTON */
+            /* TICKET BUTTON */
 .button-tickets {
-  grid-column: 1/4;
-  grid-row: 1;
+  grid-column: 4/7;
   padding: 20px 25px;
   text-align: center;
   transition: 0.5s;
