@@ -31,6 +31,10 @@ html{
  
   }
 
+  h3{
+    font: 80px;
+  }
+
 
 
   /* backgrounds */
@@ -64,7 +68,7 @@ html{
 
   .tagline{
     grid-column: 2/9;
-    grid-row: 2;
+    grid-row: 3;
     color: #9B4019;
   }
 
@@ -91,6 +95,14 @@ html{
     grid-row: 2;
     scale: 70%;
   }
+
+  .itinerary{
+    grid-column: 1/12;
+    text-align: center;
+    grid-row: 4;
+    padding-bottom: 30px;
+  }
+
 
             /* TICKET BUTTON */
   .button-tickets {
