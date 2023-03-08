@@ -60,6 +60,30 @@ html{
     color: #9B4019;
   }
 
+  .tomato1,.tomato2,.tomato3,.tomato4{
+    z-index: -1;
+  }
+  .tomato1{
+    grid-column: 1/2; 
+    grid-row: 2;
+    scale: 50%;
+  }
+  .tomato2{
+    grid-column: 2/4; 
+    grid-row: 3;
+    scale: 50%;
+  }
+  .tomato3{
+    grid-column: 3/8; 
+    grid-row: 3;
+    scale: 50%;
+  }
+  .tomato4{
+    grid-column: 10/12; 
+    grid-row: 2;
+    scale: 50%;
+  }
+
             /* TICKET BUTTON */
   .button-tickets {
     z-index: 100;
