@@ -2,7 +2,10 @@
     margin: 0;
 }
 
-
+html{
+  scroll-behavior: smooth;
+ 
+}
 
 /** grid for all pages **/
 .grid{
