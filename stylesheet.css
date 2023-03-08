@@ -27,22 +27,28 @@ html{
   h2{
     font-family: "bagatelle-variable", sans-serif;
     font-variation-settings: "BLLS" 199.0, "STCK" 219.81982; 
-    font-size: 80px;
+    font-size: 60px;
  
   }
 
 
 
   /* backgrounds */
-  #tickets-grad-bg{
-    
+  #tickets-grad-bg{    
     background-image: linear-gradient(#F6EEBB, #FFE573);
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100vw;
  
+  }
+  #index-grad-bg{    
+    background: linear-gradient(180deg, #F1F0D8 0%, #FFE672 25%, #F0B34F 50%, #D86A6C 75%, #9B4019 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw; 
 
   }
+
 
   .logo{
     place-items: center;
@@ -105,6 +111,7 @@ html{
     background-image: linear-gradient(45deg, #a8cd63 0%, #a8cd63  30%, #9ABE59  100%);
     cursor: pointer;
     font-size: 20px;
+    
      
   }
   .button-tickets:hover {
