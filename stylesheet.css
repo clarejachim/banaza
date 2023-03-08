@@ -1,18 +1,21 @@
 *{
     margin: 0;
 }
-
 html{
-  scroll-behavior: smooth;
- 
+  scroll-behavior: smooth; 
 }
+::-webkit-scrollbar {display: none;} /* no scroll bar*/
 
 /** grid for all pages **/
 .grid{
     display: grid;
-    grid-template-columns: repeat(12, 1fr); /* spans to 11*/
-    grid-template-rows: repeat(40, 1fr); /* supa long page */
-  }
+    grid-template-columns: repeat(12, 1fr);/* spans 1 - 11*/
+    grid-template-rows: repeat(40, 1fr);/* supa long grid*/
+    justify-content: center;
+    overflow: hidden; /* so there is no side scroll, everything fits in the page*/
+    grid-template-rows: fit-content(8ch) fit-content(8ch) 1fr;
+    
+  } 
 
   /* fonts */
   h1{
@@ -41,16 +44,27 @@ html{
   }
 
   .logo{
-    position: sticky;
-    grid-column: 1/12;
+    grid-column: 1/13;
+    grid-row: 1; 
+    z-index: 100;   
+    justify-content: center;
+    display: grid;
+    padding: 20px;
+  }
+
+  .tagline{
+    grid-column: 2/6;
+    grid-row: 2;
   }
 
             /* TICKET BUTTON */
   .button-tickets {
-    position: absolute;
-    left: 77.6%;
-    right: 3.47%;
-    top: 2.3%;
+    grid-column: 11;
+    grid-row: 1;
+    /* position: absolute;
+    left: 77%;
+    right: 3%;
+    top: 2.3%; */
     padding: 15px ;
     text-align: center;
     transition: 0.5s;
