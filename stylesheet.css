@@ -3,6 +3,7 @@
 }
 html{
   scroll-behavior: smooth; 
+  background: #F1F0D8;
 }
 ::-webkit-scrollbar {display: none;} /* no scroll bar*/
 
