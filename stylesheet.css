@@ -7,6 +7,7 @@ html{
 }
 ::-webkit-scrollbar {display: none;} /* no scroll bar*/
 
+
 /** grid for all pages **/
 .grid{
     display: grid;
@@ -59,6 +60,7 @@ html{
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100vw; 
+    z-index: -100;
 
   }
   /* end background section */
@@ -77,33 +79,41 @@ html{
   }
 
   .tagline{
-    grid-column: 2/9;
+    grid-column: 1/11;
     grid-row: 3;
     color: #9B4019;
+    padding: 10px, 70px, 90px, 50px;
   }
 
-  .tomato1,.tomato2,.tomato3,.tomato4{
-    z-index: -5;
-  }
   .tomato1{
-    left: 5%;    
-    grid-row: 2;
+    position: absolute;
+    width: 344.88px;
+    height: 500px;
+    left: -100px;
+    top: 15vw;
     scale: 50%;
+    transform: rotate(62.03deg);
+    transform: scale(-1, 1);    
   }
   .tomato2{
-    grid-column: 2/5; 
-    grid-row: 3;
-    scale: 60%;
+    scale: 70%;
+    top: 35vw;
+    padding-left: 18%;
+    position: absolute;
+    transform: rotate(62.03deg);
   }
   .tomato3{
-    grid-column: 3/8; 
-    grid-row: 3;
-    scale: 80%;
+    position: absolute;
+    scale: 73%;
+    top: 22vw;
+    padding-left: 65%;
+    transform: rotate(25.96deg);
   }
   .tomato4{
-    grid-column: 10/12; 
-    grid-row: 2;
-    scale: 70%;
+    position: absolute;
+    scale: 50%;
+    top: 5vw;
+    padding-left: 100%;
   }
 
   .itinerary{
@@ -112,6 +122,12 @@ html{
     grid-row: 4;
     padding-bottom: 30px;
   }
+.line{width: 287px;
+  height: 0px;
+  left: 143px;
+  top: 1417px;
+  
+  border: 3px solid #E2A549;}
 
 
 /* TICKET BUTTON */
