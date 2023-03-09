@@ -17,6 +17,7 @@ html{
     grid-template-rows: fit-content(8ch) fit-content(8ch) 1fr;
     
   } 
+/* end grid section */
 
   /* fonts */
   h1{
@@ -32,9 +33,16 @@ html{
   }
 
   h3{
-    font: 80px;
+    font-family: "bagatelle-variable", sans-serif;
+    font-variation-settings: "BLLS" 199.0, "STCK" 219.81982; 
+    font-size: 96px;
+  }
+  h4{
+    font-family: Neue Kabel Light;
+    font-size: 26px;
   }
 
+  /* end font section */
 
 
   /* backgrounds */
@@ -43,6 +51,7 @@ html{
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100vw;
+
  
   }
   #index-grad-bg{    
@@ -52,6 +61,7 @@ html{
     width: 100vw; 
 
   }
+  /* end background section */
 
 
   .logo{
@@ -104,7 +114,7 @@ html{
   }
 
 
-            /* TICKET BUTTON */
+/* TICKET BUTTON */
   .button-tickets {
     z-index: 100;
     grid-column: 12;
@@ -146,4 +156,90 @@ html{
     color: rgba(0, 0, 0, 0.65);
     transform: translateY(0);
   }
+
+  /* end ticket button */
+
+
     
+  /* TICKET PAGE workspace */
+
+  .tickets-general{
+    grid-column: 1/6;
+    grid-row: 10;
+    text-align: center;
+    padding-top: 10%;
+    scale: 60%;
+    transform: rotate(3deg);
+    padding-left: 40%; 
+  }
+.tickets-centered-general {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  padding-top: 6%;
+}
+.tickets-connoisseur{
+  grid-column: 6/12;
+  grid-row: 10;
+  text-align: center;
+  padding-top: 10%;
+  scale: 60%;
+  transform: rotate(-3deg);
+  padding-right: 40%; 
+}
+.tickets-centered-connoisseur {
+  position: absolute;
+  top: 55%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  padding-top: 6%;
+}
+.tickets-buy-container{
+  grid-column:2/5;
+  grid-row: 11;
+  padding-left: 40%;
+  padding-bottom: 20%;
+}
+/* TICKET BUTTON */
+.tickets-buy {
+  z-index: 100;
+  grid-column: 3/6;
+  grid-row: 11;
+  width: 190px; 
+  height: 50px;
+  text-align: center;
+  transition: 0.5s;
+  color: white;
+  border-radius: 18px;
+  border: none;
+  box-shadow: rgba(34, 33, 33, 0.57) 0 1px 3px 0;
+  background-image: linear-gradient(45deg, #a8cd63 0%, #a8cd63  30%, #9ABE59  100%);
+  cursor: pointer;
+  font-family: Neue Kabel;
+  font-size: 24px;
+
+}
+.tickets-buy:hover {
+  background-position: right center;
+  text-decoration: none;
+}
+.tickets-buy:active {
+  transform: scale(0.99);
+}
+.tickets-buy:hover,
+.tickets-buy:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transform: translateY(-2px);
+}
+.tickets-buy:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+ 
+
+  /* end TICKET PAGE workspace */
