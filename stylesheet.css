@@ -3,7 +3,9 @@
 }
 html{
   scroll-behavior: smooth; 
-  background: #F1F0D8;
+  /* background: #F1F0D8; */
+  background: linear-gradient(180deg, #F1F0D8 0%, #FFE672 25%, #F0B34F 50%, #D86A6C 75%, #9B4019 100%);
+   
 }
 ::-webkit-scrollbar {display: none;} /* no scroll bar*/
 
@@ -54,17 +56,17 @@ html{
 
  
   }
-  #index-grad-bg{    
+  /* #index-grad-bg{    
     background: linear-gradient(180deg, #F1F0D8 0%, #FFE672 25%, #F0B34F 50%, #D86A6C 75%, #9B4019 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100vw; 
     z-index: -100;
 
-  }
+  } */
   /* end background section */
 
-
+    
   .logo{
     place-items: center;
     align-content: center;
@@ -75,7 +77,53 @@ html{
     scale: 70%;
     position: fixed;
   }
+/* TICKET BUTTON */
+.button-tickets {
+  z-index: 100;
+  grid-column: 12;
+  grid-row: 1;
+  top: 4.75%;   
+  right: 5%;
+  position: fixed;
+  width: 190px; 
+  height: 50px;
+  text-align: center;
+  transition: 0.5s;
+  color: white;
+  border-radius: 18px;
+  border: none;
+  box-shadow: rgba(34, 33, 33, 0.57) 0 1px 3px 0;
+  background-image: linear-gradient(45deg, #a8cd63 0%, #a8cd63  30%, #9ABE59  100%);
+  cursor: pointer;
+  font-size: 25px;
+  font-family: Neue Kabel;
+ 
+   
+}
+.button-tickets:hover {
+  background-position: right center;
+  text-decoration: none;
+}
+.button-tickets:active {
+  transform: scale(0.99);
+}
+.button-tickets:hover,
+.button-tickets:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transform: translateY(-2px);
+}
+.button-tickets:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}/* end ticket button */
 
+
+
+/* INDEX WORKSPACE */
   .tagline{
     grid-column: 1/13;
     grid-row: 1;
@@ -92,6 +140,7 @@ html{
       grid-column: 6/9;
       padding-top: 10vw;
       text-align: center;
+      color: #7C4F25;
       
     }
 
@@ -100,10 +149,11 @@ html{
     width: 344.88px;
     height: 500px;
     left: -100px;
-    top: 15vw;
+    top: 20vw;
     scale: 50%;
     transform: rotate(62.03deg);
-    transform: scale(-1, 1);    
+    transform: scale(-1, 1);  
+    overflow: hidden;   
   }
   .tomato2{
     scale: 70%;
@@ -111,6 +161,7 @@ html{
     padding-left: 18%;
     position: absolute;
     transform: rotate(62.03deg);
+    overflow: hidden; 
   }
   .tomato3{
     position: absolute;
@@ -118,77 +169,58 @@ html{
     top: 22vw;
     padding-left: 65%;
     transform: rotate(25.96deg);
+    overflow: hidden; 
   }
   .tomato4{
     position: absolute;
     scale: 50%;
     top: 5vw;
     padding-left: 100%;
+    overflow: hidden;
+    width: 406px;
   }
 
   .itinerary{
-    grid-column: 1/12;
-    text-align: center;
-    grid-row: 4;
-    padding-bottom: 30px;
+    grid-column: 1/13;
+    grid-row: 4/10;
     align-items: center;
-    padding: 10vw;
+    padding-top: 30vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
   }
+  .dimsum{
+    grid-column: 8/13;
+    grid-row: 6;
+    scale: 70%;
+    padding-top: 15vw;
 
-.line{
-  width: 287px;
-  height: 0px;
-  left: 143px;
-  top: 1417px;
-  
-  border: 3px solid #E2A549;}
-
-
-/* TICKET BUTTON */
-  .button-tickets {
-    z-index: 100;
-    grid-column: 12;
-    grid-row: 1;
-    top: 4.75%;   
-    right: 5%;
-    position: fixed;
-    width: 190px; 
-    height: 50px;
+  }
+  .curry{
+    grid-row: 7;
+    scale: 75%;
+    padding-top: 100vw;
+    position: absolute;
+    left: -500px;
+    transform: rotate(-31.5deg);
+  }
+  .weekend{
     text-align: center;
-    transition: 0.5s;
-    color: white;
-    border-radius: 18px;
-    border: none;
-    box-shadow: rgba(34, 33, 33, 0.57) 0 1px 3px 0;
-    background-image: linear-gradient(45deg, #a8cd63 0%, #a8cd63  30%, #9ABE59  100%);
-    cursor: pointer;
-    font-size: 25px;
-    font-family: Neue Kabel;
-   
-     
   }
-  .button-tickets:hover {
-    background-position: right center;
-    text-decoration: none;
+  .day{
+    /* text-align: right; */
+    grid-column: 1/3;
+    text-align: right;
+    font-family: Neue Kabel Light;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 10vwpx;
+    
   }
-  .button-tickets:active {
-    transform: scale(0.99);
-  }
-  .button-tickets:hover,
-  .button-tickets:focus {
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-      transform: translateY(-2px);
-  }
-  .button-tickets:active {
-    background-color: #F0F0F1;
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-    color: rgba(0, 0, 0, 0.65);
-    transform: translateY(0);
-  }
+/* end INDEX workspace */
 
-  /* end ticket button */
+
 
 
     
