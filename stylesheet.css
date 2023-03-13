@@ -86,10 +86,11 @@ html{
     font-style: normal;
     font-size: 55px;
     }
+
     .location{
-      grid-row: 1;
+      grid-row: 3;
       grid-column: 6/9;
-      /* padding: 4vw 0vw 0vw 10vw; */
+      padding-top: 10vw;
       text-align: center;
       
     }
@@ -130,7 +131,10 @@ html{
     text-align: center;
     grid-row: 4;
     padding-bottom: 30px;
+    align-items: center;
+    padding: 10vw;
   }
+
 .line{
   width: 287px;
   height: 0px;
