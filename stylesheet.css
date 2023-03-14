@@ -193,18 +193,35 @@ html{
   .dimsum{
     grid-column: 8/13;
     grid-row: 6;
-    scale: 70%;
+    scale: 75%;
     padding-top: 15vw;
 
   }
   .curry{
     grid-row: 7;
     scale: 75%;
-    padding-top: 100vw;
+    padding-top: 122vw;
     position: absolute;
     left: -500px;
     transform: rotate(-31.5deg);
   }
+  .paella{
+    grid-row: 10;
+    grid-column: 10/13;
+    scale: 70%;
+    z-index: -1;
+    transform: rotate(-173.5deg);
+    }
+    .peppers{
+      grid-row: 10;
+      grid-column: 1/4;
+      scale: 70%;
+      z-index: -1;
+    }
+
+
+
+
   .weekend{
     text-align: center;
   }
