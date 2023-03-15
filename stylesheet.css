@@ -13,7 +13,7 @@ html{
 /** grid for all pages **/
 .grid{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);/* spans 1 - 11*/
+    grid-template-columns: repeat(12, 1fr);/* spans 1 - 13*/
     grid-template-rows: repeat(40, 1fr);/* supa long grid*/
     justify-content: center;
     overflow: hidden; /* so there is no side scroll, everything fits in the page*/
@@ -40,7 +40,7 @@ html{
     font-size: 60px;
   }
   h4{
-    font-family: Neue Kabel Light;
+    font-family: Neue Kabel regular;
     font-size: 30px;
   }
 
@@ -71,7 +71,7 @@ html{
     place-items: center;
     align-content: center;
     left: 25%;
-    z-index: 1;   
+    z-index: 100;   
     justify-content: center;
     padding: 1.5vw;
     scale: 70%;
@@ -177,17 +177,19 @@ html{
     top: 5vw;
     padding-left: 100%;
     overflow: hidden;
-    width: 406px;
+    width: 355px;
   }
 
   .itinerary{
     grid-column: 1/13;
     grid-row: 4/10;
     align-items: center;
-    padding-top: 30vw;
+    padding-top: 35vw;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);/* spans 1 - 13*/
+    grid-template-rows: repeat(10, 1fr);/* supa long grid*/
+    z-index: 3;
 
   }
   .dimsum{
@@ -219,22 +221,45 @@ html{
       z-index: -3;
       transform: rotate(-9.77deg);
     }
-
-
-
-
   .weekend{
     text-align: center;
+    color: #9B4019;
+    grid-column: 1/5;
   }
   .day{
-    /* text-align: right; */
-    grid-column: 1/3;
     text-align: right;
     font-family: Neue Kabel Light;
     font-weight: 800;
     font-size: 30px;
-    padding: 10vwpx;
+    padding: 0 5vw;
     
+  }
+  .food_country{
+    padding: 0 5vw;
+    font-size: 35px;
+    font-family: Neue Kabel Regular;
+    color: #9B4019;
+
+  }
+  #asia{
+    grid-column: 1/3;
+    text-align: right;
+    /* background-color: red; */
+  }
+  #america{
+    grid-column: 3/5;
+    text-align: left;
+    /* background-color: orange; */
+  }
+  #africa{
+    grid-column: 1/3;
+    text-align: right;
+    /* background-color: green; */
+  }
+  #europe{
+    grid-column: 3/5;    
+    text-align: left;
+    /* background-color: blue; */
   }
 /* end INDEX workspace */
 
