@@ -195,9 +195,9 @@ html{
   }
   .dimsum{
     grid-column: 8/13;
-    grid-row: 6;
+    grid-row: 4;
     scale: 75%;
-    padding-top: 15vw;
+    padding-top: 50vw;
 
   }
   .curry{
@@ -226,19 +226,19 @@ html{
     text-align: center;
     color: #9B4019;
     grid-column: 1/5;
-    background-color: #D86A6C;
+    padding-bottom: 25vw;
   }
   .day{
     text-align: right;
     font-family: "neue-kabel-light", sans-serif;
-    font-size: 30px;
+    font-size: 23px;
     padding: 0 8vw;
     color: #64331E;
     align-content:space-around;
     
-  }
+  }  
   .food_country{
-    padding: 0 3vw;
+    padding: 3vw 4.5vw 0 4.5vw;
     font-size: 35px;
     font-family: "neue-kabel";
     font-weight: 400;
@@ -249,15 +249,15 @@ html{
   #asia{
     grid-column: 1/3;
     grid-row: 1;
-    background-color: white;
-    padding: 20vw 0vw 0vw 0vw;
+    padding-top: 20vw;
+    /* background-color: wheat; */
   }
   #america{
     grid-column: 3/5;
     grid-row: 2;
     text-align: left;
-    /* padding-top: 10vw; */
-    background-color: orange;
+    /* background-color: orange; */
+    padding-bottom: 13vw;
   }
   #africa{
     grid-column: 1/3;
@@ -269,7 +269,15 @@ html{
     grid-column: 3/5;   
     grid-row: 4; 
     text-align: left;
-    background-color: blue;
+    background-color: rgb(160, 160, 233);
+  }
+  .line{
+    position: absolute;
+    width: 560px;
+    height: 0px;
+    left: -227px;
+    top: 104vw;
+    border: 2px solid #E2A549;
   }
 /* end INDEX workspace */
 
