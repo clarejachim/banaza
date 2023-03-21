@@ -60,6 +60,14 @@ html{
 
  
   }
+
+  #about-grad-bg{    
+    background-image: linear-gradient(#F6EEBB, #E2A549);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;}
+
+
   /* #index-grad-bg{    
     background: linear-gradient(180deg, #F1F0D8 0%, #FFE672 25%, #F0B34F 50%, #D86A6C 75%, #9B4019 100%);
     background-repeat: no-repeat;
@@ -69,6 +77,7 @@ html{
 
   } */
   /* end background section */
+
 
     
   .logo{
@@ -456,3 +465,31 @@ html{
 
 
 /* end TICKET PAGE workspace */
+
+/* start of ABOUT PAGE workspace*/
+
+.About-Orange-Box {
+grid-column: 11/12;
+grid-row: 5;
+text-align: right;
+padding-top:30%;
+background-color: #9ABE59;
+
+
+}
+
+.Our-Origin {
+
+grid-column: 1/12;
+grid-row: 8;
+font-family: 'Glegoo';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 30px;
+
+align-items: center;
+text-align: center;
+
+color: #64331E;
+}
