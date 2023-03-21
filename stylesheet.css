@@ -17,7 +17,7 @@ html{
     grid-template-rows: repeat(10, 1fr);/* supa long grid*/
     justify-content: center;
     overflow: hidden; /* so there is no side scroll, everything fits in the page*/
-    grid-template-rows: fit-content(8ch) fit-content(8ch) 1fr;
+  
     
   } 
 /* end grid section */
