@@ -46,6 +46,13 @@ html{
   h4{
     font-family: "neue-kabel-regular", sans-serif;
     font-size: 32px;
+    color: #7C4F25;
+  }
+  p{
+    font-family: Neue Kabel Light;
+    font-size: 24px;
+    color: #64331E;
+
   }
 
   /* end font section */
@@ -423,33 +430,67 @@ html{
   border: 3px solid #C8981C;
 }
 
-.vec-container{
-  padding-top: 19vh;
+.tickets-vec-container{
   grid-row: 9;
   grid-column: 3;
+  padding-top: 20%;
 }
-.vec-title{
-  padding-top:50%;
+.tickets-vec-title{
+  justify-content: center;
   grid-row: 9;
   grid-column: 4/8;
-  padding-right: 10%;
-}
-.svg-path-vec2 {
-  width: 75px;
-  border: 3px solid #C8981C;
+
 }
 
-.vec-container2{
-  padding-top: 19vh;
+.tickets-vec-container2{
   grid-row: 12;
   grid-column: 13;
+  padding-top: 20%;
 }
-.vec-title2{
-  padding-top:50%;
+.tickets-vec-container3{
+  grid-row: 15;
+  grid-column: 3;
+
+}
+
+.tickets-vec-title2{
+  justify-content: center;
   grid-row: 12;
-  grid-column: 8/12;
-  padding-left: 20vh;
+  grid-column: 9/12;
+  padding-left: 10%;
+
 }
+.tickets-vec-title3{
+  justify-content: center;
+  grid-row: 15;
+  grid-column: 4/9;
+  padding-left: 10%;
+
+}
+.tickets-orange-container{
+  overflow: hidden;
+  grid-row: 13;
+  grid-column: 1/3;
+  rotate: 180deg;
+
+}
+.tickets-lemon-container{
+  grid-row: 9/11;
+  grid-column: 11/12;
+}
+.tickets-lem-img{
+  width: auto;
+  height: 40vh;
+}
+
+.tickets-map-info{
+  grid-row: 16;
+  grid-column: 1/13;
+  padding-left: 23%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
 
 
  
