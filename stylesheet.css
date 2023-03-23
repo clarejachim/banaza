@@ -216,34 +216,39 @@ html{
     /* background-color: #966ad86f; */
   }
   .dimsum{
-    grid-column: 8/13;
-    grid-row: 1;
+    grid-column: 7/13;
+    grid-row: 2;
     scale: 75%;
     z-index: -100;
+    padding-top: 10vw;
     position: relative;
-
   }
   .curry{
-    grid-row: 7;
-    scale: 75%;
-    padding-top: 147vw;
+    grid-row: 2;
+    scale: 70%;
+    padding-top: 137vw;
     position: absolute;
     left: -500px;
     transform: rotate(-31.5deg);
   }
   .paella{
-    grid-row: 10;
-    grid-column: 10/13;
-    scale: 70%;
-    z-index: -1;
-    transform: rotate(-173.5deg);
+    grid-row: 3;
+    grid-column: 8;
+    scale: 60%;
+    transform: rotate(98deg);
+
     }
     .peppers{
-      grid-row: 10;
+      /* grid-row: 3;
       grid-column: 1/4;
-      scale: 20%;
-      z-index: -3;
+      scale: 20%; */
       transform: rotate(-9.77deg);
+      grid-column: 7/13;
+      grid-row: 2;
+      scale: 20%;
+      z-index: -100;
+      padding-top: 10vw;
+      position: relative;
     }
   .weekend{
     text-align: center;
@@ -310,27 +315,13 @@ html{
     z-index: 200;
     height:min-content;
   }
-  .line{
-    margin: 3.25vw 0 3.25vw 0;
-    width: 65vw;
-    border: 2px solid #E2A549;
-    
-  }
 
-.line_container{
-  grid-column: 1/5;
-  /* background-color: rgba(0, 0, 0, 0.543); */
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  z-index: 200;
-}
 .line{
-  grid-row: 1/5;
   margin: 3.25vw 0 3.25vw 0;
   width: 27vw;
   border: 2px solid #E2A549;
   
-} */
+} 
 /* end INDEX workspace */
 
 
