@@ -97,17 +97,13 @@ html{
   } */
   /* end background section */
 
-
     
   .logo{
-    place-items: center;
-    align-content: center;
-    left: 25%;
     z-index: 100;   
-    justify-content: center;
-    padding: 1.5vw;
-    scale: 70%;
+    scale: 40%;
     position: fixed;
+    width: 90%;
+  
   }
 /* TICKET BUTTON */
 .button-tickets {
