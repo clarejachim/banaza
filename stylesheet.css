@@ -103,7 +103,7 @@ html{
     scale: 40%;
     position: fixed;
     width: 90%;
-  
+    align-items: center;
   }
 /* TICKET BUTTON */
 .button-tickets {
@@ -237,7 +237,8 @@ html{
   }
   .paella{
     grid-row: 3;
-    grid-column: 8/12;
+    /* grid-column: 8/12; */
+    grid-column: 1/12;
     scale: 70%;
     margin-top: 70vw;
     position: relative;
@@ -247,12 +248,18 @@ html{
 
     }
     .peppers{
-      transform: rotate(-9.77deg);
-      grid-column: 7/13;
-      grid-row: 4;
-      scale: 20%;
+      /* transform: rotate(-9.77deg); */
+      /* scale: 20%;
       position: relative;
-      background-color: #F0F0F1;
+      background-color: red;
+      top: 100%; */
+      background-color: red;
+      /* top: 35vw; */
+    width: 150%;
+    position: absolute;
+    overflow: hidden; 
+    scale: 20%;
+
     }
   .weekend{
     text-align: center;
@@ -337,6 +344,7 @@ html{
 .cocktails{
   grid-row: 4;
   grid-column: 1/13;
+  background-color: #f0f0f176;
   display: grid;
   grid-template-columns: repeat(5,1fr);
   grid-template-rows: repeat(1,1fr);
@@ -347,6 +355,7 @@ html{
   z-index: -5;
   width: 50px;
   transform: matrix(-0.96, -0.28, -0.28, 0.96, 0, 0);
+  position: relative;
 }
 .wine{
   grid-column: 5;
