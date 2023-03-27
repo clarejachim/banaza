@@ -53,7 +53,6 @@ html{
   h4{
     font-family: "neue-kabel-regular", sans-serif;
     font-size: 32px;
-    color: #7C4F25;
   }
   h5{
     font-family: "bagatelle-variable", sans-serif;
@@ -63,8 +62,6 @@ html{
   p{
     font-family: Neue Kabel Light;
     font-size: 24px;
-    color: #64331E;
-
   }
 
   /* end font section */
@@ -367,7 +364,6 @@ html{
   z-index: -5;
   transform: rotate(24.93deg);
 }
-
 .music{
   grid-row: 5;
   grid-column: 1/13;
@@ -375,21 +371,28 @@ html{
   flex-direction: row;
 }
 .gallery_cont{
-  margin: 0 1vw; 
   grid-row: 6;
   grid-column: 2/12;
+  color: #F6EEBB;
+  text-align: center;
+  font-size: 35px;
+  font-family: "neue-kabel";
+  font-weight: 400;
+  font-style: normal;
 }
 .gallery{ 
-  margin: 0 0vw;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   flex-direction: row
 
 }
-.gallery-item{
-  scale: 80%;
+.gallery > div > img{
+  width: 25vw;
+  height: 25vw;
+  margin: 1vw;
 }
+
 
 /* end INDEX workspace */
 
