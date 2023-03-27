@@ -813,9 +813,156 @@ border-radius: 63px;
   padding-top: 6%;
 }
 
+.african-chef {
+  position: absolute;
+  width: 217px;
+  height: 300px;
+  left: 470px;
+  top: 885px;
+  transition: 1s ease;
+
+}
+
+
+
+
+.american-chef {
+  position: absolute;
+  width: 217px;
+  height: 300px;
+  left: 810px;
+  top: 885px;
+
+}
+
+.purple-box-1 {
+  grid-area: Carousel;
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 257px;
+  height: 320px;
+  left: 120px;
+  top: 880px;
+  
+  border: 30px solid #846EA8;
+  border-radius: 30px;
+
+}
+
+.purple-box-2 {
+  grid-area: Carousel;
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 257px;
+  height: 320px;
+  left: 450px;
+  top: 880px;
+  
+  border: 30px solid #846EA8;
+  border-radius: 30px;
+
+}
+
+.purple-box-3 {
+  grid-area: Carousel;
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 257px;
+  height: 320px;
+  left: 780px;
+  top: 880px;
+  
+  border: 30px solid #846EA8;
+  border-radius: 30px;
+}
+
+.european-chef {
+  position: absolute;
+  width: 217px;
+  height: 300px;
+  top: 885px;
+}
+
 .Carousel { 
   grid-area: Carousel; 
   
 }
 
+/* movement stuff below */
+
+.purple-box-2:hover .overlay-2 {
+  opacity: 50%;
+}
+
+.overlay-1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.Name-1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.Name-2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.Name-3 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .Newsletter { grid-area: Newsletter; }
+
+
