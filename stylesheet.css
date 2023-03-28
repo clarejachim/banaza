@@ -71,7 +71,6 @@ html{
     background-attachment: fixed;
     width: 100vw;
 
- 
   }
 
   #about-grad-bg{    
@@ -89,6 +88,7 @@ html{
     z-index: -100;
 
   } */
+  
   /* end background section */
 
     
@@ -350,39 +350,73 @@ html{
   border: 2px solid #E2A549;
   
 } 
-<<<<<<< HEAD
-=======
-#cocktails{
-  color: #F1F0D8;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
-  line-height: 112%;
-  text-align: center;
-  grid-column: 1/6;
-
+.tagline>pre{
+  font-family: "neue-kabel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 95%;
 }
-.cocktails{
+#cocktails1{
+  color: #F6EEBB;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  grid-column: 2/13;
+  grid-row: 4;
+  text-align: left;
+  padding: 20vw 0 0 0;
+}
+#cocktails2{
+  color: #F6EEBB;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  grid-column: 5/11;
+  grid-row: 4;
+  text-align: right;
+  padding: 50vw 0 0 0;
+}
+#cocktails3{
+  color: #F6EEBB;
+  /* color: white; */
+  text-shadow:4px 4px 2px rgba(0, 0, 0, 0.615);
+  text-align: center;
+  grid-column: 3/11;
+  grid-row: 4;
+  text-align: center;
+  padding: 60vw 0 0 0;
+  font-size: 30px;
+    font-family: "neue-kabel";
+    font-weight: 400;
+    font-style: normal;
+}
+/* .cocktails{
   grid-row: 4;
   grid-column: 1/13;
-  background-color: #f0f0f176;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(1,1fr);
+  justify-content: center;
+  align-content: center;
+  
 
-}
+} */
 .beer{
-  grid-column: 2;
+  grid-column: 7/9;
+  grid-row: 4/6;
+  margin-top: 10vw;
+  scale: 90%;
   z-index: -5;
-  width: 50px;
+  opacity: 50%;
   transform: matrix(-0.96, -0.28, -0.28, 0.96, 0, 0);
-  position: relative;
 }
 .wine{
-  grid-column: 5;
-  z-index: -5;
+  grid-column: 12;
+  grid-row: 4;
+  z-index: -6;
   transform: matrix(-0.92, 0.38, 0.38, 0.92, 0, 0);
+  margin-left: 10vw;
 }
 .martini{
   grid-column: 1;
+  grid-row: 3/5;
+  margin-top: 150vw;
   z-index: -5;
   transform: rotate(24.93deg);
 }
@@ -417,7 +451,6 @@ html{
 }
 
 
->>>>>>> ee931123215765f3f26cead21bae9a837bcbf0d6
 /* end INDEX workspace */
 
  
