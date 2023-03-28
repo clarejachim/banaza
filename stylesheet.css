@@ -120,6 +120,7 @@ html{
   .icons{
     justify-content: left;
     padding-left:18vw;
+    z-index: 1;
   }
 
 
@@ -717,8 +718,8 @@ color: #64331E;
   grid-template-areas:
     "hamburger . Ava-grid-logo Ava-grid-logo Ava-grid-logo . button-tickets button-tickets"
     "Line-Our-Origin Our-Origin Our-Origin . . . . ."
-    "About-Yellow-Box About-Yellow-Box About-Yellow-Box About-Yellow-Box About-Yellow-Box Ava-starfruit Ava-starfruit ."
-    "About-Yellow-Box About-Yellow-Box About-Yellow-Box About-Yellow-Box About-Yellow-Box Ava-starfruit Ava-starfruit ."
+    "About-Yellow-Box About-Yellow-Box About-Yellow-Box About-Yellow-Box About-Yellow-Box Ava-starfruit-2 Ava-starfruit ."
+    "About-Yellow-Box About-Yellow-Box About-Yellow-Box About-Yellow-Box About-Yellow-Box Ava-starfruit-2 Ava-starfruit ."
     "About-Yellow-Box About-Yellow-Box About-Yellow-Box About-Yellow-Box About-Yellow-Box . . ."
     "Ava-orange Ava-orange . About-Orange-Box About-Orange-Box About-Orange-Box About-Orange-Box About-Orange-Box"
     "Ava-orange Ava-orange . About-Orange-Box About-Orange-Box About-Orange-Box About-Orange-Box About-Orange-Box"
@@ -733,11 +734,30 @@ color: #64331E;
 
 .hamburger { grid-area: hamburger; }
 
-.Ava-grid-logo { grid-area: Ava-grid-logo; }
+.Ava-grid-logo { 
+  grid-area: Ava-grid-logo;
+  z-index: 100;   
+  scale: 65%;
+  position: fixed;
+  width: 90%;
+  align-items: center;
+  top: 10px;
+  left: 50px;
+}
 
 .button-tickets { grid-area: button-tickets; }
 
-.Line-Our-Origin { grid-area: Line-Our-Origin; }
+.Line-Our-Origin { 
+  grid-area: Line-Our-Origin; 
+  position: absolute;
+  width: 111px;
+  height: 0px;
+  left: 22px;
+  top: 180px;
+
+  background: #7C4F25;
+  border: 1px solid #7C4F25;
+}
 
 .Our-Origin { 
   grid-area: Our-Origin; 
@@ -745,6 +765,7 @@ color: #64331E;
   clear: both;
   display: inline-block;
   white-space: nowrap;
+  padding-top: 18px;
   /* need to fix padding */
 color: #64331E;
 }
@@ -759,7 +780,7 @@ position: absolute;
 width: 750px;
 height: 280px;
 left: -89px;
-top: 180px;
+top: 230px;
 
 background: #F5C956;
 border: 3px solid #F5C956;
@@ -784,15 +805,67 @@ padding-top: 5%;
 }
 
 
-.Ava-starfruit { grid-area: Ava-starfruit; }
-
-.Image-Ava-starfruit {
-/* width: 500px;
-height: 300px; */
-/* transform: rotate(-155.18deg); */ 
+.Ava-starfruit { 
+  grid-area: Ava-starfruit; 
+  position: absolute;
+  left: 800px;
+  top: 130px;
 }
 
-.Ava-orange { grid-area: Ava-orange; }
+.Image-Ava-starfruit {
+  position: absolute;
+  width: 416.608px;
+  height: 387.784px;
+  transform: rotate(-155.18deg);
+
+}
+
+.Ava-starfruit-2 { 
+  grid-area: Ava-starfruit; 
+  position: absolute;
+  left: 600px;
+  top: 180px;
+}
+
+.Image-Ava-starfruit-2 {
+  position: absolute;
+  width: 209.55px;
+  height: 195.05px;
+  transform: rotate(-5.68deg);
+
+}
+
+.Ava-orange { grid-area: Ava-orange;
+ }
+
+.Image-Ava-Orange {
+  width: 315px;
+  height: 308px;
+  transform: rotate(-92.9deg);
+  left: 48.92px;
+  position: absolute;
+  top: 450px;
+  z-index: 1;
+}
+
+.Image-Ava-Orange-2 {
+  width: 240px;
+  height: 235px;
+  transform: rotate(-92.9deg);
+  /* left: 48.92px; */
+  right: 1000px;
+  position: absolute;
+  top: 600px;
+}
+
+.Image-Ava-Orange-3 {
+  width: 177.05px;
+  height: 173.36px;
+  transform: rotate(-92.9deg);
+  left: 350px;
+  position: absolute;
+  top: 540px;
+}
 
 .About-Orange-Box { 
   grid-area: About-Orange-Box;
@@ -800,9 +873,9 @@ height: 300px; */
   padding-right: 5%;
   position: absolute;
 width: 890px;
-height: 170px;
+height: 200px;
 left: 546px;
-top: 529px;
+top: 580px;
 
 
 background: #D99A33;
@@ -814,7 +887,7 @@ border-radius: 63px;
 
   position: absolute;
   width: 800px;
-  height: 180px;
+  height: 205px;
   right: 170px;
   top: 8px;
   
@@ -829,11 +902,27 @@ border-radius: 63px;
   padding-top: 2%;
 }
 
-.Line-Featured-Chefs { grid-area: Line-Featured-Chefs; }
+.Line-Featured-Chefs { 
+  grid-area: Line-Featured-Chefs;
+  position: absolute;
+  width: 111px;
+  height: 0px;
+  left: 22px;
+  top: 880px;
+
+  background: #7C4F25;
+  border: 1px solid #7C4F25;
+}
 
 .Featured-Chefs { 
   grid-area: Featured-Chefs;
-  padding-top: 6%;
+  text-align: left;
+  clear: both;
+  display: inline-block;
+  white-space: nowrap;
+  padding-top: 14.5%;
+  color: #64331E;
+  /* top: 1800px; */
 }
 
 .african-chef {
@@ -841,7 +930,8 @@ border-radius: 63px;
   width: 217px;
   height: 300px;
   left: 470px;
-  top: 885px;
+  /* top: 885px; */
+  top: 1000px;
   transition: 1s ease;
 
 }
@@ -854,7 +944,7 @@ border-radius: 63px;
   width: 217px;
   height: 300px;
   left: 810px;
-  top: 885px;
+  top: 1000px;
 
 }
 
@@ -864,9 +954,9 @@ border-radius: 63px;
 
   position: absolute;
   width: 257px;
-  height: 320px;
+  height: 340px;
   left: 120px;
-  top: 880px;
+  top: 989px;
   
   border: 30px solid #846EA8;
   border-radius: 30px;
@@ -879,9 +969,9 @@ border-radius: 63px;
 
   position: absolute;
   width: 257px;
-  height: 320px;
+  height: 340px;
   left: 450px;
-  top: 880px;
+  top: 989px;
   
   border: 30px solid #846EA8;
   border-radius: 30px;
@@ -894,9 +984,9 @@ border-radius: 63px;
 
   position: absolute;
   width: 257px;
-  height: 320px;
+  height: 340px;
   left: 780px;
-  top: 880px;
+  top: 989px;
   
   border: 30px solid #846EA8;
   border-radius: 30px;
@@ -906,7 +996,8 @@ border-radius: 63px;
   position: absolute;
   width: 217px;
   height: 300px;
-  top: 885px;
+  top: 999px;
+  left: 140px;
 }
 
 .Carousel { 
@@ -946,6 +1037,7 @@ border-radius: 63px;
   position: absolute;
   top: 0;
   bottom: 0;
+  font-family: Neue Kabel Light;
   left: 0;
   right: 0;
   opacity: 0;
@@ -956,6 +1048,7 @@ border-radius: 63px;
 .Name-2 {
   color: white;
   font-size: 20px;
+  font-family: Neue Kabel Light;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -986,6 +1079,123 @@ border-radius: 63px;
   text-align: center;
 }
 
-.Newsletter { grid-area: Newsletter; }
 
+.Newsletter {
+  grid-area: Newsletter;
+  /* position: absolute; */
+  /* top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+  /* align-items: center;
+  justify-content: center; */
+  padding-left: 100px;
+  padding-top: 30px;
+}
 
+.content {
+  width: 360px;
+  height: 40px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Neue Kabel Light;
+}
+
+.subscription {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.subscription .add-email{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  font-family: Neue Kabel;
+}
+
+.subscription .submit-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% - 2px);
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  margin: 1px;
+  padding: 0 20px;
+  cursor: pointer;
+  background: #9ABE59;
+  color: #000000;
+  transition: width .35s ease-in-out,
+    background .35s ease-in-out;
+    font-family: Neue Kabel;
+}
+
+.subscription.done .submit-email {
+  width: calc(100% - 2px);
+  background: #C0E02E;
+  font-family: Neue Kabel;
+}
+
+.subscription .submit-email .before-submit,
+.subscription .submit-email .after-submit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 38px;
+  transition: visibility .35s ease-in-out,
+    opacity .35s ease-in-out;
+  font-family: Neue Kabel;
+}
+
+.subscription.done .submit-email .before-submit,
+.subscription:not(.done) .submit-email .after-submit {
+  visibility: hidden;
+  opacity: 0;
+  font-family: Neue Kabel;
+}
+
+.subscription .submit-email .after-submit {
+  transition-delay: .35s;
+  font-family: Neue Kabel;
+}
+
+.subscription:not(.done) .submit-email .before-submit,
+.subscription.done .submit-email .after-submit {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mini-newsletter-text {
+  padding-left: -100px;
+  clear: both;
+  display: inline-block;
+}
+
+.spacing {
+  padding-top: 50px;
+}
+
+.Thanks {
+  font-size: 10px;
+}
+
+.Pike-Place-Image {
+  position: absolute;
+width: 351.5px;
+height: 404.5px;
+left: 931px;
+top: 1418px;
+
+}
