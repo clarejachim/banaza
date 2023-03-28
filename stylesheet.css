@@ -350,8 +350,6 @@ html{
   border: 2px solid #E2A549;
   
 } 
-<<<<<<< HEAD
-=======
 #cocktails{
   color: #F1F0D8;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
@@ -417,7 +415,6 @@ html{
 }
 
 
->>>>>>> ee931123215765f3f26cead21bae9a837bcbf0d6
 /* end INDEX workspace */
 
  
@@ -670,7 +667,7 @@ html{
   grid-column: 13;
 }
 .tickets-guava-container{
-  /* rotate: 90deg; */
+   rotate: 90deg; 
   grid-row: 4;
   grid-column: 11/13;
 
@@ -683,10 +680,12 @@ html{
 .tickets-guava-img{
   width: auto;
   height: 50vh;
-  padding-bottom: 30%;
+  align-items: left;
+  padding-left: 50%;
+  overflow: hidden;
 }
 
-.tickets-map-info{
+.tickets-map-img{
   grid-row: 4;
   grid-column: 1/13;
   padding-left: 23%;
