@@ -10,11 +10,11 @@
     <title>Tickets Page</title>
 </head>
 <body id="tickets-grad-bg">
-
-  <div class="grid">
+  
+  <div class="grid_index">
     <!-- main grid -->
     
-    <div class="logo"><img src="Bananza-Images/bananza-final-logo.png" alt="Bananza Logo"></div>
+    <div class="logo"><img src="Bananza-Images/bananza logo.svg" alt="Bananza Logo"></div>
         
     <button class="button-tickets" role="button"><a href="" style="text-decoration: none; color:white;">Tickets</a></button> 
    
@@ -34,8 +34,31 @@
  
 
     <div class="tickets-gourmet">
-      <img src="Bananza-Images/Tickets/light-yellow-ticket.png" alt="gourmet daily ticket">
-      <div class="tickets-centered-gourmet"><h3>GOURMET</h3></div>
+      <div class="flip-box"style="background-color: pink;">
+        <div class="flip-box-inner"style="background-color: green;">
+          <div class="flip-box-front">
+            <img src="Bananza-Images/Tickets/light-yellow-ticket.png" alt="gourmet daily ticket">
+            <div class="tickets-centered-gourmet"><h3>GOURMET</h3></div>
+          </div>
+          
+          <div class="flip-box-back">
+            <div class="zoom">
+            <img src="Bananza-Images/Tickets/light-yellow-ticket.png" alt="gourmet daily ticket">
+            <div class="tickets-centered-gourmet"style="top:50%;">
+              <h4>Includes:</h4>
+   
+            <div class="tickets-info-font" style="padding-top:5%;">3 tastings <br> 2 drinks</div>
+      
+            <h4 style="padding-top:5%;">Price:$199</h4>
+            </div>
+            
+            
+          </div>
+        </div>
+
+        </div>
+      </div>
+    
      
       <div class="tickets-buy-container">
         <button class="tickets-buy" role="button"><a href="" style="text-decoration: none; color:white;">BUY NOW</a></button>
@@ -89,7 +112,7 @@
       <img src="Bananza-Images/Token Images/orange.png" alt="orange slice image">
     </div>
 
-    
+
    
 
     <div class="tickets-vec-container3">
@@ -99,15 +122,38 @@
       <h4>Map + Directions</h4>
     </div>
 
-    <div class="tickets-map-img">
-      <img src="Bananza-Images/pike-place-mkt-img" alt="map of venue">
+   
+     <!-- grid row 4-->
+      <div class="tickets-display-map">
+        <img src="Bananza-Images/pike-place-mkt-img.jpeg" alt="map of venue">
+        <p style="padding-top:10%; text-align: center;"> This year Bananza will be held in Seattle, Washington at the historic Pike Place Market! 
+          This cultural pinpoint is one of the oldest farmers markets blah blah interesting context about locaiton interesting context about locaiton interesting context about locaiton interesting context about locaiton interesting context about locaiton interesting context about locaiton 
+        </p>
+      </div>
+  
+          <!-- grid row 5 -->
+
+    <div class="tickets-guava-ctn">
+      <img src="Bananza-Images/Token Images/guava.png" alt="map of venue" style="height:60vh; width:auto;">
+    </div>
+              <!-- grid row 6 -->
+  
+
+
+    <div class="tickets-info-btn">
+      <p>Parking is offered at Republic Parking Garage (2 blocks from the venue). However, public transportation, walking, biking, and any other means of low emissions travel is preferred! </p>
       <br>
       <br>
-      
-      <button class="tickets-map-btn" role="button"><a href="" style="text-decoration: none; color:white;">Parking Map</a></button>
-      <button class="tickets-map-btn" role="button"><a href="" style="text-decoration: none; color:white;">Venue Map</a></button>
+      <div class="btn-spacing">
+        <button class="tickets-map-btn" role="button"><a href="" style="text-decoration: none; color:white;">Parking Map</a></button>
+        <br>
+        <br>
+        <button class="tickets-map-btn" role="button"><a href="" style="text-decoration: none; color:white;">Venue Map</a></button>
+      </div>
     </div>
 
+    <!-- grid row 7 -->
+    <br>
     <div class="tickets-vec-container4">
       <div class="svg-path-vec"></div>
     </div>
@@ -115,20 +161,129 @@
       <h4>FAQ</h4>
     </div>
 
+    <!-- grid row 8 -->
+    <div class="faq-ctn">
+      <main>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h3 class="faq-page">What is your refund policy?</h3>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <div class="faq-answer-txt">Unfortunately, our tickets are <span style="font-weight:bolder"> nonrefundable and nonresellable.</span> <br>
+                      Our chiefs and vendors have traveled far and wide to help showcase their skills and ingredients!
+                      Our best suggestion is to mark your calendars when you buy your tickets so you don’t forget about this event!
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-line">
 
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">What happens if there is inclement weather?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                  <div class="faq-answer-txt">If it is raining, we will provide extra seating inside and cover our outdoor seating area.
+                    Incase of severe weather, we will notify everyone as soon as we can about the cancellation. We will only reimburse tickets in case of cancellation of bad weather.  <br></div>
+                  </div>
+              </div>
+            <hr class="hr-line">
 
+            <div class="faq-three">
+                <!-- faq question -->
+                <h1 class="faq-page">Can I buy tickets at the venue?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <div class="faq-answer-txt">Unfortunately, we will not be selling tickets at the venue. We will only be selling tickets online. <br>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+            <div class="faq-four">
+              <!-- faq question -->
+              <h3 class="faq-page">How does parking work?</h3>
+              <!-- faq answer -->
+              <div class="faq-body">
+                  <div class="faq-answer-txt">Parking is offered at Republic Parking Garage (2 blocks from the venue). Please refer to the above section ‘Map + Directions’ for more details.<br>
+                  </div>
+              </div>
+          </div>
+          <hr class="hr-line">
+
+          <div class="faq-five">
+            <!-- faq question -->
+            <h1 class="faq-page">Can I bring outside food and drink?</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <div class="faq-answer-txt">Unfortunately, we do not allow outside food and drinks. You may bring empty waterbottles to fill them up at the venue. Be sure to come hungry because we will have plenty of food options
+                  for everyone! <br>
+            </div>
+        </div>
+        <hr class="hr-line">
+
+        <div class="faq-six">
+          <!-- faq question -->
+          <h1 class="faq-page">Is there security on the premises?</h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <div class="faq-answer-txt">There is security on the premise. We have asked the local Seattle Police Department to help keep everyone safe and having fun! <br>
+          </div>
+        </div>
+      <hr class="hr-line">
+
+      </section>
+      </main>
+      <script src="tickets.js"></script>
+      <!-- end faq tag-->
+    </div>
+    <!-- do not delete between these lines-->
+    <!-- grid row 9 -->
+    <div class="tickets-starfruit-ctn">
+      <img src="Bananza-Images/Token Images/starfruit.png" style="width:auto; height: 60vh;">
+    </div>
+    <div class="tickets-papaya-ctn">
+      <img src="Bananza-Images/Token Images/papaya.png" style="width:auto; height: 70vh;">
+    </div>
+
+    <!-- grid row 9 still -->
+  <div class="tickets-newsletter-ctn">
+    <div class="Newsletter">
+      <h3>Sign up for our newsletter</h3>
+      <p class = "mini-newsletter-text">Stay up to date on upcoming events and more!</p>
+      <div class = "spacing">
+      <div class="content">
+          <form class="subscription">
+            <input class="add-email" type="email" placeholder="subscribe@me.now">
+            <button class="submit-email" type="button">
+              <span class="before-submit">Subscribe</span>
+              <span class="after-submit"><p class="Thanks">Thank you for subscribing!</p></span>
+             </button>
+          </form>
+        </div>
+      </div>
+     
+    </div>
+  </div>
 
     
- 
-
-
-
-
-
 
 
     <!-- end grid tag-->
-    </div> 
+  </div> 
+  <!-- footer tag is hard to see bc its white, change color of gradient or change font color-->
+  
+  <footer>
+    <div class="footer_content">©BANANZA</div>
+    <div class="footer_content">Privacy Policy</div>
+    <div class="footer_content">Cookies</div>
+    <div class="footer_content">Terms and Conditions</div>
+    <div class="footer_content">Help</div>
+    <div class="icons">
+        <img src="Bananza-Images/Icons - Sponsors/twitter.png" alt="twitter">
+        <img src="Bananza-Images/Icons - Sponsors/instagram-icon.png" alt="instagram">
+    </div>
+</footer>
 
 
 
