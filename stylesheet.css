@@ -436,12 +436,13 @@ html{
 
 }
 .lineup{
-  margin: 18vw 5vw 0vw 5vw;
+  margin: 20vw 6vw 0vw 0vw;
   color: #64331E;
   text-align: center;
 }
 .music > img{
   transform: rotate(-8.61deg);
+  width: 40vw;
 }
 .gallery_cont{
   grid-row: 6;
