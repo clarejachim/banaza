@@ -10,81 +10,59 @@
     <title>Document</title>
 </head>
 <body id="about-grad-bg">
-<!-- <body id="about-grad-bg"> -->
-   <!-- <div class ="grid"> -->
-    <!-- <div class="About-Container1">
-        <div class="Hamburger"> -->
-            <!-- css Hamburger menu ?-->
-        <!-- </div>
-        <div class="Ava-logo"><img src="Bananza-Images/bananza logo.svg" class = "Ava-grid-logo" alt="Bananza Logo"></div> -->
-            <!-- Insert logo image tag ?-->
-        <!-- <button class="button-tickets" role="button"><a href="" style="text-decoration: none; color:white;">TICKETS</a></button> 
-    </div>
-    <div class="About-Container2">
-        <div class="Line-Our-Origin"> -->
-            <!-- make with css ?-->
-        <!-- </div>
-        <div class="Our-Origin">
-            <h3>Our Origin</h3>
-        </div>
-        <div class="About-Yellow-Box"> -->
-            <!-- font 4 ?-->
-            <!-- <p class = "P-About-1">Bananza started when a group of friends got together <br>
-                and shared their favorite meals with each other, <br>
-                teaching and exploring new culinary cuisine and <br>
-                expression. This eventually lead to a small scale annual <br>
-                get together where friends invited friends who invited <br>
-                friends. Eventually, it grew into the fest you know and love: <br>
-                Bananza!</p> -->
-            <!-- Probs need to image div classes for the star fruit-->
-        <!-- </div>
-        <div class="About-Yellow-Box-Outline"></div>
-    </div> -->
-    <!-- <div class="About-Container3"> -->
-        <!-- Probs need to image div classes for the oranges-->
-        <!-- <div class="About-Orange-Box">
-            <p>Bananza invites and collaborates with those who want to<br>
-                explore their culinary pallets with tastes from all over the<br>
-                world. We invite those distinguished in their culinary fields<br>
-                to join us for the weekend and share their tasty bites with<br>
-                those who are curious! </p> -->
-
-        <!-- </div>
-        <div class="About-Orange-Box-Outline"></div>
-    </div>
-    <div class="About-Container4">
-        <div class="Line-Featured-Chefs"> -->
-            <!-- make with css ?-->
-        <!-- </div>
-        <div class="Featured-Chefs">
-            <h3>Featured Chefs</h3>
-        </div>
-        <div class="Carousel"> -->
-            <!-- idk how to make -->
-        <!-- </div>
-    </div>
-    <div class="About-Container5">
-        <div class="Newsletter">
-            <h6>Sign up for our newsletter</h6> -->
-            <!-- font 4 below ?-->
-            <!-- <p>Stay up to date on upcoming events and more!</p> -->
-            <!-- probs css code for newsletter thingy -->
-        <!-- </div> -->
-        <!-- Probs need to image div class for the public market center image-->
-    <!-- </div> -->
-    <!-- </div>  -->
 
     <!-- NEW ATTEMPT-->
 
     <div class="container-Ava">
-        <div class="hamburger"></div>
+        <div class="hamburger">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                    <input type="checkbox" />
+
+                    <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                    <ul id="menu">
+                        <a href="index.html">
+                            <p class="Menu-home">Home</p>
+                        </a>
+                        <a href="tickets.html">
+                            <p class="Menu-tickets">Tickets</p>
+                        </a>
+                        <a href="about.html">
+                            <p class="Menu-about">About</p>
+                        </a>
+                        <a href="about.html">
+                            <p class="Menu-conact">Contact Us</p>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+
+
+        </div>
         <div class="Ava-grid-logo"> <img src="Bananza-Images/bananza logo.svg" class = "Ava-grid-logo" alt="Bananza Logo"></div>
         <div class="button-tickets-ava">
             <button class="actual-button-tickets-ava" role="button"><a href="" style="text-decoration: none; color:white;">TICKETS</a></button>
         </div>
         <div class="Line-Our-Origin"></div>
         <div class="Our-Origin">
-           <h3 class = "Our-Origin">Our Origin</h3> 
+           <h5 class = "Our-Origin">Our Origin</h5> 
         </div>
         <div class="About-Yellow-Box">
             <p class = "Text-Ava-About-Yellow">
@@ -111,17 +89,16 @@
         <div class="About-Orange-Box">
             <!-- might have to rename text -->
             <p class = "Text-About-Orange-Box" >
-                Bananza invites and collaborates with those who want to<br>
-                explore their culinary pallets with tastes from all over the<br>
-                world. We invite those distinguished in their culinary fields<br>
-                to join us for the weekend and share their tasty bites with<br>
-                those who are curious!
+                Bananza invites and collaborates with those who want to explore<br>
+                their culinary pallets with tastes from all over the world. We invite<br>
+                those distinguished in their culinary fields to join us for the<br>
+                weekend and share their tasty bites with those who are curious!<br>
             </p>
             <div class = "About-Orange-Box-Outline"></div>
         </div>
         <div class="Line-Featured-Chefs"></div>
         <div class="Featured-Chefs">
-            <h3 class = "Featured-Chefs-text">Featured-Chefs</h3> 
+            <h5 class = "Featured-Chefs-text">Featured-Chefs</h5> 
                 <!-- <img src="Bananza-Images/Chefs/african-chef.jpg" class = "african-chef">
                 <img src="Bananza-Images/Chefs/american-chef.jpg" class = "american-chef">
                 <img src="Bananza-Images/Chefs/european-chef.jpg" class = "european-chef"> -->
@@ -147,8 +124,9 @@
             </div>
         </div>
         <div class="Newsletter">
-            <h3>Sign up for our newsletter</h3>
+            <h5 class="Sign-up">Sign up for our newsletter</h5>
             <p class = "mini-newsletter-text">Stay up to date on upcoming events and more!</p>
+            <div class="center-pls">
             <div class = "spacing">
             <div class="content">
                 <form class="subscription">
@@ -159,6 +137,7 @@
                    </button>
                 </form>
               </div>
+            </div>
             </div>
             <div class = "Pike-Place-Ava">
                 <img src="Bananza-Images/Token Images/pike-place.png" class = "Pike-Place-Image">
