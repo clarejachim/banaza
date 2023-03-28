@@ -378,7 +378,7 @@ html{
   text-align: center;
   grid-column: 2/13;
   grid-row: 4;
-  text-align: left;
+  text-align: left; 
   padding: 20vw 0 0 0;
 }
 #cocktails2{
