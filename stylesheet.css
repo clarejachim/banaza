@@ -786,12 +786,14 @@ color: #64331E;
 
 /* NEW ATTEMPT */
 
-.container-Ava {  display: grid;
+.container-Ava {  
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
+  overflow: hidden;
   grid-template-areas:
     "hamburger . Ava-grid-logo Ava-grid-logo Ava-grid-logo . button-tickets-ava button-tickets-ava"
     "Line-Our-Origin Our-Origin Our-Origin . . . . ."
@@ -807,9 +809,164 @@ color: #64331E;
     "Carousel Carousel Carousel Carousel Carousel Carousel Carousel Carousel"
     ". . Newsletter Newsletter Newsletter Newsletter . ."
     ". . Newsletter Newsletter Newsletter Newsletter . .";
+   
+    
 }
 
-.hamburger { grid-area: hamburger; }
+.hamburger { 
+  grid-area: hamburger; 
+  position: fixed;
+  z-index: 1;
+}
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #64331E;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 35px;
+  height: 1000px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  /* position: fixed;
+   */
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  /* height: 1000px; */
+  margin-bottom: 5px;
+  position: relative;
+  
+  
+  background: #64331E;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #64331E;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  /* position: absolute; */
+  position: fixed;
+  width: 200px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #F6EEBB;
+  /* background: #9ABE59; */
+  height: 100%;
+  position: fixed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
 
 .Ava-grid-logo { 
   grid-area: Ava-grid-logo;
@@ -922,7 +1079,7 @@ padding-top: 5%;
   left: 48.92px;
   position: absolute;
   top: 450px;
-  z-index: 1;
+  /* z-index: 4; */
 }
 
 .Image-Ava-Orange-2 {
@@ -930,7 +1087,7 @@ padding-top: 5%;
   height: 235px;
   transform: rotate(-92.9deg);
   /* left: 48.92px; */
-  right: 1000px;
+  right: 1300px;
   position: absolute;
   top: 600px;
 }
@@ -949,34 +1106,35 @@ padding-top: 5%;
   text-align: right; 
   padding-right: 5%;
   position: absolute;
-width: 890px;
+width: 820px;
 height: 200px;
 left: 546px;
 top: 580px;
 
-
 background: #D99A33;
-border-radius: 63px;
+border-radius: 63px 0px 0px 63px;
+
 }
 
 .About-Orange-Box-Outline {
   box-sizing: border-box;
 
   position: absolute;
-  width: 800px;
+  width: 920px;
   height: 205px;
-  right: 170px;
-  top: 8px;
+  right: 1px;
+  top: 10px;
   
   border: 3px solid #F5C956;
-  border-radius: 63px;
+  border-radius: 63px 0px 0px 63px;
 
 }
 
 
 .Text-About-Orange-Box {
-  padding-right: 30%;
-  padding-top: 2%;
+  padding-right: 10%;
+  padding-top: 4%;
+  overflow: hidden;
 }
 
 .Line-Featured-Chefs { 
@@ -997,18 +1155,21 @@ border-radius: 63px;
   clear: both;
   display: inline-block;
   white-space: nowrap;
-  padding-top: 14.5%;
+  padding-top: 5%;
   color: #64331E;
   /* top: 1800px; */
 }
 
 .african-chef {
   position: absolute;
-  width: 217px;
-  height: 300px;
-  left: 470px;
+  /* width: 217px;
+  height: 300px; */
+  /* left: 470px; */
+  left: 630px;
   /* top: 885px; */
   top: 1000px;
+  width: 267px;
+  height: 360px;
   transition: 1s ease;
 
 }
@@ -1018,9 +1179,11 @@ border-radius: 63px;
 
 .american-chef {
   position: absolute;
-  width: 217px;
-  height: 300px;
-  left: 810px;
+  /* width: 217px;
+  height: 300px; */
+  width: 267px;
+  height: 360px;
+  left: 1100px;
   top: 1000px;
 
 }
@@ -1030,9 +1193,9 @@ border-radius: 63px;
   box-sizing: border-box;
 
   position: absolute;
-  width: 257px;
-  height: 340px;
-  left: 120px;
+  width: 300px;
+  height: 390px;
+  left: 160px;
   top: 989px;
   
   border: 30px solid #846EA8;
@@ -1045,9 +1208,12 @@ border-radius: 63px;
   box-sizing: border-box;
 
   position: absolute;
-  width: 257px;
-  height: 340px;
-  left: 450px;
+  /* width: 257px;
+  height: 340px; */
+
+  width: 300px;
+  height: 390px;
+  left: 620px;
   top: 989px;
   
   border: 30px solid #846EA8;
@@ -1060,10 +1226,13 @@ border-radius: 63px;
   box-sizing: border-box;
 
   position: absolute;
-  width: 257px;
-  height: 340px;
-  left: 780px;
+  /* width: 257px;
+  height: 340px; */
+  left: 1075px;
   top: 989px;
+
+  width: 300px;
+  height: 390px;
   
   border: 30px solid #846EA8;
   border-radius: 30px;
@@ -1071,10 +1240,12 @@ border-radius: 63px;
 
 .european-chef {
   position: absolute;
-  width: 217px;
-  height: 300px;
+  /* width: 217px;
+  height: 300px; */
+  width: 267px;
+  height: 360px;
   top: 999px;
-  left: 140px;
+  left: 190px;
 }
 
 .Carousel { 
@@ -1166,8 +1337,10 @@ border-radius: 63px;
   height: 100%; */
   /* align-items: center;
   justify-content: center; */
-  padding-left: 100px;
-  padding-top: 30px;
+  /* padding-left: 100px; */
+  padding-top: 60px;
+  text-align: center;
+  /* padding-left: 100px; */
 }
 
 .content {
@@ -1177,12 +1350,14 @@ border-radius: 63px;
   border-radius: 10px;
   overflow: hidden;
   font-family: Neue Kabel Light;
+  /* padding-left: 150px; */
 }
 
 .subscription {
   position: relative;
   width: 100%;
   height: 100%;
+
 }
 
 .subscription .add-email{
@@ -1195,6 +1370,7 @@ border-radius: 63px;
   outline: none;
   padding: 0 20px;
   font-family: Neue Kabel;
+  /* padding-left: 100px; */
 }
 
 .subscription .submit-email {
@@ -1234,6 +1410,7 @@ border-radius: 63px;
   transition: visibility .35s ease-in-out,
     opacity .35s ease-in-out;
   font-family: Neue Kabel;
+  
 }
 
 .subscription.done .submit-email .before-submit,
@@ -1255,7 +1432,7 @@ border-radius: 63px;
 }
 
 .mini-newsletter-text {
-  padding-left: -100px;
+  /* padding-left: 100px; */
   clear: both;
   display: inline-block;
 }
@@ -1272,8 +1449,8 @@ border-radius: 63px;
   position: absolute;
 width: 351.5px;
 height: 404.5px;
-left: 931px;
-top: 1418px;
+left: 1088px;
+top: 1505px;
 
 }
 
@@ -1321,4 +1498,28 @@ top: 1418px;
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0); 
+}
+
+.Sign-up {
+  color: #7C4F25;
+}
+
+.center-pls {
+  padding-left: 25%;
+}
+
+.Menu-home {
+  margin-bottom: 10%;
+}
+
+.Menu-about {
+  margin-bottom: 10%;
+}
+
+.Menu-tickets {
+  margin-bottom: 10%;
+}
+
+.Menu-contact {
+  margin-bottom: 10%;
 }
