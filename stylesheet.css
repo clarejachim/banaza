@@ -694,7 +694,7 @@ html{
 }
 
 
-/* vector for heading */
+/* vector for heading and title */
 .svg-path-vec {
   width: 75px;
   border: 3px solid #C8981C;
@@ -754,6 +754,24 @@ html{
   padding-top: 5%;
 
 }
+/* vector for heading and title */
+
+/* fruit containers */
+.tickets-starfruit-ctn{
+  grid-row: 9;
+  grid-column: 13;
+  rotate: -90deg;
+}
+
+.tickets-papaya-ctn{
+  grid-row: 9;
+  grid-column: 1/3;
+  padding-right:80%;
+  transform: scaleX(-1);
+  rotate: 20deg;
+  padding-top:10%;
+}
+
 .tickets-orange-container{
   overflow: hidden;
   grid-row: 3;
@@ -770,37 +788,13 @@ html{
   grid-column: 10/13;
   rotate: 90deg;
   padding-left:80%;
-
-
-
 }
+
 .tickets-lem-img{
   width: auto;
   height: 40vh;
 }
-/* .tickets-guava-img{
-  width: auto;
-  height: 50vh;
-  align-items: left;
-  padding-left: 50%;
-  overflow: hidden;
-} */
-
-/* .t2{
-  grid-row: 4;
-  grid-column: 1/13;
-  padding-left:30%;
-  padding-top: 30%;
-
-  
-} */
-.tickets-funfact{
-  grid-row: 4;
-  grid-column: 6/12;
-  padding-top:10%;
-  padding-left:50%;
-  text-align: center;
-}
+/* fruit containers */
 
 .tickets-display-map{
   display: inline-flex;
@@ -820,8 +814,6 @@ html{
   margin: 5vw 3vw
 }
 .tickets-info-btn{
-  /* display: inline-flex;
-  flex-direction: row; */
   grid-column: 1/10;
   grid-row: 6;
   margin: 2vw 4vw;
@@ -831,32 +823,28 @@ html{
   margin-left:5vw;
 }
 
-/* .tickets-info-btn > button{
-  align-items: center;
-  justify-self: center;
-  justify-content: center;
-}  */
 .btn-spacing{
   margin-right: 20vw;
   margin-left: 20vw;
   margin-bottom: 5%;
 }
 
+/* faq animations */
+
 .faq-ctn{
   grid-row:8;
   grid-column: 2/12;
 }
 faq-heading{
-  /* border-bottom: #777; */
   padding: 20px 60px;
 }
+
 .faq-container{
 display: flex;
 justify-content: center;
 flex-direction: column;
-
-
 }
+
 .hr-line{
 width: 60%;
 margin: auto;
@@ -866,8 +854,6 @@ background-color: #59391a6b;
 }
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
-  /* background-color: #eee; */
-  /* color: #444; */
   cursor: pointer;
   padding: 30px 20px;
   width: 60%;
@@ -878,19 +864,14 @@ background-color: #59391a6b;
     font-family: Neue Kabel;
     font-size: 30px;
     color: #59391A;
-  
-
 }
-.faq-body{
 
+.faq-body{
   margin: auto;
 text-align: center;
  width: 50%; 
  padding: auto;
-
- 
 }
-
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
@@ -902,7 +883,6 @@ text-align: center;
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
   padding: 0 18px;
-
   display: none;
   overflow: hidden;
 }
@@ -911,7 +891,6 @@ text-align: center;
   content: '\02795';
   /* Unicode character for "plus" sign (+) */
   font-size: 13px;
-  /* color: #777; */
   float: right;
   margin-left: 5px;
 }
@@ -920,25 +899,9 @@ text-align: center;
   content: "\2796";
   /* Unicode character for "minus" sign (-) */
 }
+/* faq animations */
 
-.tickets-starfruit-ctn{
-  grid-row: 9;
-  grid-column: 13;
-  rotate: -90deg;
 
-}
-.tickets-papaya-ctn{
-  grid-row: 9;
-  grid-column: 1/3;
-  padding-right:80%;
-  transform: scaleX(-1);
-  rotate: 20deg;
-  padding-top:10%;
-  /* rotate: 180deg; */
-  /* transform: scaleX(-1); */
-  
-
-}
 .tickets-newsletter-ctn{
   grid-row:9;
   grid-column: 4/10;
@@ -946,6 +909,8 @@ text-align: center;
   justify-content: center;
 
 }
+
+/* flipping box animation */
 .flip-box {
   /*where the box to animate is*/
   background-color: transparent;
@@ -982,31 +947,22 @@ text-align: center;
 }
 
 .flip-box-back {
-  /*the back of the card when it is turned around*/
   background-color: #555;
   color: white;
   transform: rotateY(180deg);
-  /* background-image: url("Bananza-Images/Tickets/light-yellow-ticket.png");
-  background-size: cover;
-  background-repeat: no-repeat; */
-
-
 }
 .flipped-txt-ctn{
   font-family: Neue Kabel;
   font-size: 30px;
-  color: red;
-  /* position: absolute; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* flipping box animation */
 
+/* zooming animation on tickets */
 .zoom {
-
-  /* background-image: url("Bananza-Images/Tickets/light-yellow-ticket.png"); */
   transition: transform .2s;
- 
   margin: 0 auto;
   background-repeat: no-repeat;
 }
@@ -1016,12 +972,7 @@ text-align: center;
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.3); 
 }
-
-
-
-
- 
-
+/* zooming animation on tickets */
 
 /* end TICKET PAGE workspace */
 
@@ -1055,7 +1006,7 @@ text-align: center;
    
     
 }
-
+ 
 .hamburger { 
   grid-area: hamburger; 
   position: fixed;
