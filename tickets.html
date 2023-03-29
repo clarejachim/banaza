@@ -10,109 +10,238 @@
     <title>Tickets Page</title>
 </head>
 <body id="tickets-grad-bg">
-  
+  <div class="hamburger">
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+            <input type="checkbox" />
+
+            <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+            <ul id="menu">
+                <a href="index.html">
+                    <p class="Menu-home">Home</p>
+                </a>
+                <a href="tickets.html">
+                    <p class="Menu-tickets">Tickets</p>
+                </a>
+                <a href="about.html">
+                    <p class="Menu-about">About</p>
+                </a>
+                <a href="about.html">
+                    <p class="Menu-conact">Contact Us</p>
+                </a>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="logo"><img src="Bananza-Images/bananza logo.svg" alt="Bananza Logo"></div>
   <div class="grid_index">
     <!-- main grid -->
     
-    <div class="logo"><img src="Bananza-Images/bananza logo.svg" alt="Bananza Logo"></div>
+   
         
     <button class="button-tickets" role="button"><a href="" style="text-decoration: none; color:white;">Tickets</a></button> 
-   
+ 
     <div class="tickets-vec-container">
       <div class="svg-path-vec"></div> 
     </div>
     <div class="tickets-vec-title">
-      <h4>Daily Pass</h4>
+      <div class="subheader-font">Packages</div>
+      <br><br>
+      <h4 style="padding-left:35%;">Daily Pass</h4>
     </div>
-    <!-- 
-    <div class="tickets-general">
-      <img src="Bananza-Images/Tickets/light-pink-ticket.png" alt="general daily ticket">
-      <div 
-      class="tickets-centered-general"><h3>GENERAL</h3></div>
-    </div>
-      --> 
- 
 
+ 
+<!-- gorument tickets-->
     <div class="tickets-gourmet">
-      <div class="flip-box"style="background-color: pink;">
-        <div class="flip-box-inner"style="background-color: green;">
+      <div class="flip-box">
+        <div class="flip-box-inner">
           <div class="flip-box-front">
             <img src="Bananza-Images/Tickets/light-yellow-ticket.png" alt="gourmet daily ticket">
             <div class="tickets-centered-gourmet"><h3>GOURMET</h3></div>
           </div>
-          
+      
           <div class="flip-box-back">
             <div class="zoom">
-            <img src="Bananza-Images/Tickets/light-yellow-ticket.png" alt="gourmet daily ticket">
-            <div class="tickets-centered-gourmet"style="top:50%;">
-              <h4>Includes:</h4>
-   
-            <div class="tickets-info-font" style="padding-top:5%;">3 tastings <br> 2 drinks</div>
-      
-            <h4 style="padding-top:5%;">Price:$199</h4>
+              <img src="Bananza-Images/Tickets/light-yellow-ticket.png" alt="gourmet daily ticket">
+              <div class="tickets-centered-gourmet"style="top:50%;">
+                <h6>Includes:</h6>
+                <div class="tickets-info-font">3 tastings <br> 2 drinks</div>
+                <h6>Price: $199</h6>
+              </div>
             </div>
-            
-            
           </div>
-        </div>
-
         </div>
       </div> 
     
-     
       <div class="tickets-buy-container">
+        <br>
         <button class="tickets-buy" role="button"><a href="" style="text-decoration: none; color:white;">BUY NOW</a></button>
       </div>
+
+    </div>
+    <!-- gorument tickets end-->
     
+  <!-- general tickets -->
+   <div class="tickets-general">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="Bananza-Images/Tickets/light-pink-ticket.png" alt="gourmet daily ticket">
+            <div class="tickets-centered-general"><h3>GENERAL</h3></div>
+          </div>
+      
+          <div class="flip-box-back">
+            <div class="zoom">
+              <img src="Bananza-Images/Tickets/light-pink-ticket.png" alt="gourmet daily ticket">
+              <div class="tickets-centered-general"style="top:50%;">
+                <h6>Includes:</h6>
+                <div class="tickets-info-font">2 tastings <br> 1 drink</div>
+                <h6>Price: $99</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    
+      <div class="tickets-buy-container2">
+
+        <button class="tickets-buy" role="button"><a href="" style="text-decoration: none; color:white;">BUY NOW</a></button>
+      </div>
+
     </div>
 
-    <div class="tickets-general">
-      <img src="Bananza-Images/Tickets/light-pink-ticket.png" alt="general daily ticket">
-      <div class="tickets-centered-general"><h3>GENERAL</h3></div>
+    <!-- general tickets old code -->
+    
+      <!-- <div class="tickets-general">
+        <img src="Bananza-Images/Tickets/light-pink-ticket.png" alt="general daily ticket">
+        <div class="tickets-centered-general"><h3>GENERAL</h3></div>
 
-      <div class="tickets-buy-container2">
-        <button class="tickets-buy" role="button"><a href="" style="text-decoration: none; color:white;">BUY NOW</a></button>
-        </div>
+        <div class="tickets-buy-container2">
+          <button class="tickets-buy" role="button"><a href="" style="text-decoration: none; color:white;">BUY NOW</a></button>
+          </div>
+      </div> -->
+
+  <!--general tickets end -->
+      <div class="tickets-lemon-container2">
+      <img src="Bananza-Images/Token Images/lemon-slice.png" class="tickets-lem-img" alt="lemon slices">
     </div>
 
     <div class="tickets-lemon-container">
       <img src="Bananza-Images/Token Images/lemon-slice.png" class="tickets-lem-img" alt="lemon slices">
     </div>
-  
-
-  
     
       <div class="tickets-vec-container2">
         <div class="svg-path-vec"></div> 
       </div>
       <div class="tickets-vec-title2">
         <h4>Weekend Pass</h4>
+        
+    
       </div>
 
-    <div class="tickets-weekend-general">
-      <img src="Bananza-Images/Tickets/dark-pink-ticket.png" alt="general weekend ticket">
-      <div class="tickets-centered-weekend-general"><h3 style="font-size: 80px;">WEEKEND GENERAL</h3></div>
 
+      <!-- weekend tickets general -->
+   
+   
 
-    <div class="tickets-buy-container3">
-      <button class="tickets-buy" role="button"><a href="" style="text-decoration: none; color:white;">BUY NOW</a></button>
+    <div class="tickets-weekend-general" >
+      
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="Bananza-Images/Tickets/dark-pink-ticket.png" alt="general weekend ticket">
+            <div class="tickets-centered-weekend-general"><h3 style="font-size: 80px;">WEEKEND GENERAL</h3></div>
+          </div>
+      
+          <div class="flip-box-back">
+            <div class="zoom">
+              <img src="Bananza-Images/Tickets/dark-pink-ticket.png" alt="gourmet daily ticket">
+              <div class="tickets-centered-gourmet">
+                <h6>Includes:</h6>
+                <div class="tickets-info-font">All inclusive food + drink</div>
+                <h6>Price: $175</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    
+      <br>
+      <br>
+      <br>
+      <div class="tickets-buy-container3">
+        <button class="tickets-buy" role="button"><a href="" style="text-decoration: none; color:white;">BUY NOW</a></button>
+      </div>
+
     </div>
-    </div>
+    <!--end of weekend tickets general -->
 
-    <div class="tickets-weekend-gourmet">
-      <img src="Bananza-Images/Tickets/darker-yellow-ticket.png" alt="gourmet weekend ticket">
-      <div class="tickets-centered-weekend-gourmet"><h3 style="font-size: 80px;">WEEKEND <br>GOURMET</h3></div>
 
+    <div class="tickets-weekend-gourmet" >
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="Bananza-Images/Tickets/darker-yellow-ticket.png" alt="general weekend ticket">
+            <div class="tickets-centered-weekend-gourmet"><h3 style="font-size: 80px;">WEEKEND GOURMET</h3></div>
+          </div>
+      
+          <div class="flip-box-back">
+            <div class="zoom">
+              <img src="Bananza-Images/Tickets/darker-yellow-ticket.png" alt="gourmet daily ticket">
+              <div class="tickets-centered-general">
+                <h6>Includes:</h6>
+                <div class="tickets-info-font">All inclusive food + drink with VIP pass  </div>
+                <h6>Price: $350</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    
       <div class="tickets-buy-container4">
         <button class="tickets-buy" role="button"><a href="" style="text-decoration: none; color:white;">BUY NOW</a></button>
       </div>
+
     </div>
+
+    <!--start of weekend tickets gourmet-->
+
+
+    <!--end of weekend gourment tickets -->
+
+
+      <!-- weekend tickets gourment old  -->
+    
 
     <div class="tickets-orange-container">
       <img src="Bananza-Images/Token Images/orange.png" alt="orange slice image">
     </div>
+     <div class="tickets-orange-container2">
+      <img src="Bananza-Images/Token Images/orange.png" alt="orange slice image">
+    </div>
+      <!-- weekend tickets gouremet end old code -->
 
-
+  <!-- weekend tickets gourmet end -->
+  <br>
+  <br>
    
 
     <div class="tickets-vec-container3">
@@ -124,7 +253,9 @@
 
    
      <!-- grid row 4-->
-      <div class="tickets-display-map">
+     
+      <div class="tickets-display-map"style="padding-top:10%;">
+     
         <img src="Bananza-Images/pike-place-mkt-img.jpeg" alt="map of venue">
         <p style="padding-top:10%; text-align: center;"> This year Bananza will be held in Seattle, Washington at the historic Pike Place Market! 
           This cultural pinpoint is one of the oldest farmers markets blah blah interesting context about locaiton interesting context about locaiton interesting context about locaiton interesting context about locaiton interesting context about locaiton interesting context about locaiton 
@@ -135,6 +266,9 @@
 
     <div class="tickets-guava-ctn">
       <img src="Bananza-Images/Token Images/guava.png" alt="map of venue" style="height:60vh; width:auto;">
+    </div>
+       <div class="tickets-lemon-ctn3">
+      <img src="Bananza-Images/Token Images/lemon-slice.png" alt="map of venue" style="height:60vh; width:auto;">
     </div>
               <!-- grid row 6 -->
   
@@ -202,10 +336,12 @@
 
             <div class="faq-four">
               <!-- faq question -->
-              <h3 class="faq-page">How does parking work?</h3>
+              <h3 class="faq-page">What does a tasting mean? What about a drink?</h3>
               <!-- faq answer -->
               <div class="faq-body">
-                  <div class="faq-answer-txt">Parking is offered at Republic Parking Garage (2 blocks from the venue). Please refer to the above section ‘Map + Directions’ for more details.<br>
+                  <div class="faq-answer-txt">A tasting consists of a single sample of food. These portions can be eaten in 4 or 5 bites.<br>
+                    <br>In our daily passes, a drink is any non-alcholic beverage. If you are 21 and older (with a valid ID) and purchase the weekend package,
+                    those tickets include the option to acquire an alcoholic drink. <br>
                   </div>
               </div>
           </div>
@@ -273,7 +409,7 @@
   </div> 
   <!-- footer tag is hard to see bc its white, change color of gradient or change font color-->
   
-  <footer>
+  <footer style="color:#59391A">
     <div class="footer_content">©BANANZA</div>
     <div class="footer_content">Privacy Policy</div>
     <div class="footer_content">Cookies</div>
