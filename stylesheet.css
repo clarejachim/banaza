@@ -1499,6 +1499,14 @@ border-radius: 63px 0px 0px 63px;
   opacity: 50%;
 }
 
+.purple-box-1:hover .overlay-1 {
+  opacity: 50%;
+}
+
+.purple-box-3:hover .overlay-3 {
+  opacity: 50%;
+}
+
 .overlay-1 {
   position: absolute;
   top: 0;
@@ -1507,12 +1515,14 @@ border-radius: 63px 0px 0px 63px;
   right: 0;
   opacity: 0;
   transition: .5s ease;
+  font-family: Neue Kabel Light;
   background-color: black;
 }
 
 .Name-1 {
   color: white;
   font-size: 20px;
+  font-family: Neue Kabel Light;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -1551,6 +1561,7 @@ border-radius: 63px 0px 0px 63px;
   bottom: 0;
   left: 0;
   right: 0;
+  font-family: Neue Kabel Light;
   opacity: 0;
   transition: .5s ease;
   background-color: black;
@@ -1559,8 +1570,10 @@ border-radius: 63px 0px 0px 63px;
 .Name-3 {
   color: white;
   font-size: 20px;
+  font: neue kabel;
   position: absolute;
   top: 20%;
+  font-family: Neue Kabel Light;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
