@@ -349,7 +349,7 @@ transform: translateY(0);
 }
 .day{
   text-align: right;
-  font-family: "neue-kabel-light", sans-serif;
+  font-family: Neue Kabel Light;
   font-size: 23px;
   padding: 0 8vw;
   color: #64331E;
