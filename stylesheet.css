@@ -143,6 +143,69 @@ html, body {
   }
 
 /* TICKET BUTTON */
+@media (min-width: 300px){
+  .grid_index{
+    overflow-x: hidden;
+  }
+  .logo{
+    grid-column: 1/13;
+    grid-row: 1;
+    display: flex;
+    padding: 8vw;
+    scale:60%;
+    position:absolute;
+    margin-left: 5vw;
+  }
+  .button-tickets {
+    grid-column: 11;
+    scale: 60%;
+    display: none;
+  }
+  .line{
+    display: none;
+  } 
+  footer{
+    margin-top: 3vw;
+  }
+  .tomato1{
+    scale: 60%; 
+    top: 0vw;
+    width: 100%;
+
+  }
+  .tomato2{
+    scale: 84%;display: none;}
+  .tomato3{
+    scale: 87%;display: none;
+  }
+  .tomato4{
+    scale: 69%;display: none;
+  }
+  .tagline{font-size: 65px;}
+  .location{scale: 100%; grid-column: 6/12;padding: 0;}
+  .lineup{
+    margin: 17vw 2vw 0 2vw;
+    scale: 110%;
+  }
+  .music >img{
+    scale: 100%;
+  }
+  .curry{display: none;}
+  .dimsum{display: none;}
+  .paella{
+    display: none;     
+    }
+  .peppers{
+    grid-row: 3;
+    grid-column: 8/12;
+    scale: 90%;
+    margin-top: 90vw;
+    position: relative;
+    /* transform: rotate(98deg); */
+  }
+  #cocktails2{ font-size: 29px; padding: 50vw 20vw 0 20vw;}
+
+}
 .button-tickets {
   z-index: 100;
   grid-column: 12;
@@ -385,15 +448,15 @@ html, body {
 }
 #cocktails2{
   color: #f6efc1;
-  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.256), 0px 0px 8px rgba(12, 30, 13, 0.373), 0px 0px 5px rgba(27, 35, 12, 0.323);
+  /* text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.256), 0px 0px 8px rgba(12, 30, 13, 0.373), 0px 0px 5px rgba(27, 35, 12, 0.323); */
   grid-column: 1/13;
   grid-row: 4;
   text-align: center;
-  padding: 50vw 20vw 0 20vw;
+  padding: 50vw 19vw 0 19vw;
   line-height: 150%;
   font-size: 24px;
   font-family: "neue-kabel";
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 .beer{
@@ -642,7 +705,7 @@ html, body {
     position: relative;
     /* transform: rotate(98deg); */
   }
-  #cocktails2{ font-size: 29px;}
+  #cocktails2{ font-size: 29px; padding: 50vw 20vw 0 20vw;}
 
 }
 
