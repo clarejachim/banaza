@@ -1004,7 +1004,7 @@ text-align: center;
 .zoom {
   transition: transform .2s;
   margin: 0 auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
 }
 
 .zoom:hover {
