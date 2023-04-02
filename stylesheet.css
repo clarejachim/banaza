@@ -579,11 +579,12 @@ opacity: 0;
 }
 @media (max-width: 600px){
   .grid_index{overflow-x: hidden; overflow: hidden;}
-  .button-tickets{margin-right: 3vw; margin-top: 6vw; scale: 90%;}
+  .button-tickets{margin-right: -5vw; margin-top: 6vw; scale: 90%;}
   .logo{padding-top: 1vw; scale: 70%;position: absolute;}
+  .location{grid-column: 5/12;scale: 90%;}
   .hamburger{padding-top: 8vw; scale: 90%; position: relative;grid-column: 1; grid-area: span;}
   .tagline{scale: 80%; padding: 0vw;text-align: center; grid-column: 1/13;}
-  .tomato1{scale: 30%; margin-top: 100vw;}
+  .tomato1{scale: 50%; margin-top: 70vw;}
   .tomato2,.tomato3,.tomato4{display: none;}
   .curry,.line,.paella,.dimsum,.beer,.wine,.peppers{display: none;}
 
