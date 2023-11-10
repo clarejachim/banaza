@@ -2,7 +2,7 @@
 Welcome to the Bananza Food Festival Website! This project, created as part of the Web Design II course, is a fictitious foodie event that serves as an immersive platform for honing our web design and programming skills. Through collaborative teamwork, our primary focus was on elevating the design aspects of the website.
 
 ### Authors:
-Clare Jachim\n
-Aviela Maynard\n
-Ava Florczak
+Clare Jachim, Aviela Maynard, and Ava Florczak
+
+
 
